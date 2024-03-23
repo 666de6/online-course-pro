@@ -1,8 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { Heading, Button, RatingBar, Text, Img } from "../../components";
-import EduviCoursesDetailsMaincard from "../../components/EduviCoursesDetailsMaincard";
-import EduviCoursesDetailsMaincard1 from "../../components/EduviCoursesDetailsMaincard1";
+import CourseCard from "../../components/CourseCard";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 
@@ -337,15 +336,13 @@ export default function EduviCoursesDetailsPage() {
               Similar Courses
             </Heading>
             <div className="w-full gap-10 grid-cols-2 md:grid-cols-1 md:gap-5 grid">
-              <EduviCoursesDetailsMaincard className="flex flex-row justify-start w-full gap-6 p-[15px] bg-white-A700 shadow-xs cursor-pointer rounded-[10px] hover:shadow-xs" />
-              <EduviCoursesDetailsMaincard1 className="flex flex-row justify-start w-full gap-6 p-[15px] bg-white-A700 cursor-pointer rounded-[10px] hover:shadow-xs" />
-              <EduviCoursesDetailsMaincard1
-                imageOne="images/img_image_2.png"
-                className="flex flex-row justify-start w-full gap-6 p-[15px] bg-white-A700 cursor-pointer rounded-[10px] hover:shadow-xs"
+              <CourseCard/>
+              <CourseCard/>
+              <CourseCard
+                mainImg="images/img_image_2.png"
               />
-              <EduviCoursesDetailsMaincard1
-                imageOne="images/img_image_3.png"
-                className="flex flex-row justify-start w-full gap-6 p-[15px] bg-white-A700 cursor-pointer rounded-[10px] hover:shadow-xs"
+              <CourseCard
+                mainImg="images/img_image_3.png"
               />
             </div>
           </div>

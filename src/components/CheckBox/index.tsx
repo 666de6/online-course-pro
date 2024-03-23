@@ -1,7 +1,7 @@
 import React from "react";
 
 const shapes = {
-  square: "rounded-[0px]",
+  square: "rounded-[4px]",
 } as const;
 
 const sizes = {
@@ -34,7 +34,6 @@ const CheckBox = React.forwardRef<HTMLInputElement, CheckboxProps>(
       id = "checkbox_id",
       onChange,
       shape = "",
-
       size = "xs",
       ...restProps
     },
@@ -48,7 +47,7 @@ const CheckBox = React.forwardRef<HTMLInputElement, CheckboxProps>(
       <>
         <div className={className + " flex items-center gap-[5px] cursor-pointer"}>
           <input
-            className={` ${(shape && shapes[shape]) || ""} ${(size && sizes[size]) || ""}`}
+            className={`border-2 border-black-900_66 ${(shape && shapes[shape]) || ""} ${(size && sizes[size]) || ""}`}
             ref={ref}
             type="checkbox"
             name={name}

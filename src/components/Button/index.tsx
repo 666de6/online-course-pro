@@ -13,6 +13,10 @@ const variants = {
     red_300_01: "bg-red-300_01 text-white-A700",
   },
   outline: {
+    white_A700: "border-white-A700 border border-solid text-white-A700",
+    orange_200_01: "border-orange-200_01 border border-solid text-orange-200_01",
+    deep_orange_400: "border-deep_orange-400 border border-solid text-deep_orange-400",
+    red_50: "border-red-50 border border-solid text-red-50",
     red_300_01: "border-red-300_01 border border-solid text-red-300_01",
   },
 } as const;
