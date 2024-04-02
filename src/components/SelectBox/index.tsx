@@ -10,8 +10,8 @@ const variants = {
   },
 } as const;
 const sizes = {
-  sm: "h-[66px] pl-[15px] pr-[35px] text-base",
-  xs: "h-[60px] pl-[15px] pr-[35px] text-base",
+  sm: "h-[40px] pl-[15px] pr-[5px] text-base",
+  xs: "h-[36px] pl-[15px] pr-[5px] text-base",
 } as const;
 
 type selectOptionType = { value: string; label: string };
@@ -83,10 +83,10 @@ const SelectBox = React.forwardRef<any, SelectProps>(
             }),
             option: (provided, state) => ({
               ...provided,
-              backgroundColor: state.isSelected && "#ffffff",
+              // backgroundColor: state.isSelected && "#ffffff",
               color: state.isSelected && "#0a033c",
               "&:hover": {
-                backgroundColor: "#ffffff",
+                // backgroundColor: "#ffffff",
                 color: "#0a033c",
               },
             }),

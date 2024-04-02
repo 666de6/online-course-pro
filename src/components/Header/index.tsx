@@ -5,9 +5,9 @@ interface Props {
   className?: string;
 }
 
-export default function Header({ ...props }: Props) {
+export default function Header({ className }: Props) {
   return (
-    <header {...props}>
+    <header className={`${className} flex justify-center items-center w-full md:h-auto p-[22px] sm:p-5 bg-gray-100`}>
       <div className="flex flex-row md:flex-col justify-between w-full mx-auto md:gap-10 md:px-5 max-w-7xl">
         <Img src="images/img_logo.svg" alt="logo_one" className="h-[30px]" />
         <div className="flex flex-row md:flex-col justify-start items-center w-[58%] md:w-full gap-6 md:gap-5">

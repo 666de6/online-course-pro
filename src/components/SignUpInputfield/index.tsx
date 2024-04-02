@@ -11,7 +11,7 @@ export default function SignUpInputfield({ email = "Email", ...props }: Props) {
     <div {...props}>
       <div className="flex flex-row justify-start w-[12%] md:w-full">
         <div className="flex flex-row justify-start w-full">
-          <Text as="p" className="!text-gray-900 !font-medium">
+          <Text as="p" className="!text-gray-900 !font-medium font-sans">
             {email}
           </Text>
         </div>

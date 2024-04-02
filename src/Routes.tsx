@@ -6,6 +6,7 @@ import EduviCoursesDetails from "pages/EduviCoursesDetails";
 import EduviShop from "pages/EduviShop";
 import EduviJoinAsTeacher from "pages/EduviJoinAsTeacher";
 import Singlementordetails from "pages/Singlementordetails";
+import SignUp from "./modals/SignUp";
 
 const ProjectRoutes = () => {
   let element = useRoutes([
@@ -15,6 +16,10 @@ const ProjectRoutes = () => {
       path: "/",
       element: <EduviCoursesDetails />,
     },
+    {
+      path: "/signup",
+      element: <SignUp isOpen={true}/>,
+    }, 
     {
       path: "eduvishop",
       element: <EduviShop />,

@@ -10,7 +10,6 @@ type RatingBarType = React.DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTM
     activeColor: string;
     isEditable: boolean;
     value: number;
-    size: number;
   }>;
 const RatingBar = ({
   children,
